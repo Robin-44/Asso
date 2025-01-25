@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+  <script language="javascript">
+    function gotoURL(){
+    var newURL = document.GotoForm.theURL.value
+    document.location.href=newURL+ ".htm"
+    }
+  </script>
+
+	<div class="navbar">
+		 <!-----	
+		 <img src="images/logo.gif" class="logo">
+		 ---->
+		
+		 <a href="index.html">ACCUEIL</a>
+         <a href="videos.html">VIDEOS</a>
+         <a href="inscriptions.html">INSCRIPTIONS</a>
+		<a href="contact.html">CONTACT</a>
+    </div> 
+ 
+	<!-----   
+    <div CLASS="navbar">
+		<ul>
+		<li> <a class="logo" href="index.html"> </a></li>
+	     <li><button ><a href="index.html">ACCUEIL</a></button></li>
+	     <li><button ><a href="videos.html">VIDEOS</a></button></li>
+		 <li><button ><a href="videos.html">INSCRIPTIONS</a></button></li>
+		 <li><button ><a href="contact.html">CONTACT</a></button></li>
+		 </ul>
+	</div>
+ ---->
+ <div class="container">
+ <div ><h3>Vidéos</h3></div>
+ 
+ <p align="justify">&nbsp;</p>
+ 
+    
+      <p align="center">
+        Entrez le code donné lors de votre inscription <br/>
+        pour visualiser les vidéos des passes apprises pendant les cours
+      </p><br/>
+        <div style="display:flex">
+          
+        <img src="images/arcu.jpg" width="40%">&nbsp;&nbsp;&nbsp;
+        <form action="JavaScript:gotoURL()" method="GET"
+        name="GotoForm">
+            <p align="center"><input type="password" size="20"
+            maxlength="100" name="theURL" required><br>
+            <font color="#0000FF" size="1">mot de passe</font></p>
+        </form>&nbsp;&nbsp;&nbsp;
+        <img src="images/arcueil.JPG" width="40%"; height="auto">
+        </div>
+
+	
+
+	  </div>
+</body>
+</html>
