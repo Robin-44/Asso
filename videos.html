@@ -1,64 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style2.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<!-- Cette ligne permet d'autoriser les caractères spéciaux sans avoir à écrire leur code UTF-8 -->
+		<title>SABOR LATINO : la passion se partage</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<!-- Cette ligne permet d'avoir un logo sur l'onglet -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+		<!-- Cette ligne permet d'importer la police (tous les utilisateurs ne l'ayant pas sur leur machine, c'est la façon la plus simple pour qu'elle s'affiche pour touut le monde) -->
+    <script language="javascript">
+      function gotoURL(){
+      var newURL = document.GotoForm.theURL.value
+      document.location.href=newURL+ ".htm"
+      }
+    </script>
+  </head>
 <body>
-
-  <script language="javascript">
-    function gotoURL(){
-    var newURL = document.GotoForm.theURL.value
-    document.location.href=newURL+ ".htm"
-    }
-  </script>
-
-	<div class="navbar">
-		 <!-----	
-		 <img src="images/logo.gif" class="logo">
-		 ---->
-		
-		 <a href="index.html">ACCUEIL</a>
-         <a href="videos.html">VIDEOS</a>
-         <a href="inscriptions.html">INSCRIPTIONS</a>
-		<a href="contact.html">CONTACT</a>
-    </div> 
- 
-	<!-----   
-    <div CLASS="navbar">
-		<ul>
-		<li> <a class="logo" href="index.html"> </a></li>
-	     <li><button ><a href="index.html">ACCUEIL</a></button></li>
-	     <li><button ><a href="videos.html">VIDEOS</a></button></li>
-		 <li><button ><a href="videos.html">INSCRIPTIONS</a></button></li>
-		 <li><button ><a href="contact.html">CONTACT</a></button></li>
-		 </ul>
-	</div>
- ---->
- <div class="container">
- <div ><h3>Vidéos</h3></div>
- 
- <p align="justify">&nbsp;</p>
- 
-    
-      <p align="center">
-        Entrez le code donné lors de votre inscription <br/>
-        pour visualiser les vidéos des passes apprises pendant les cours
-      </p><br/>
-        <div style="display:flex">
-          
-        <img src="images/arcu.jpg" width="40%">&nbsp;&nbsp;&nbsp;
-        <form action="JavaScript:gotoURL()" method="GET"
-        name="GotoForm">
-            <p align="center"><input type="password" size="20"
-            maxlength="100" name="theURL" required><br>
-            <font color="#0000FF" size="1">mot de passe</font></p>
-        </form>&nbsp;&nbsp;&nbsp;
-        <img src="images/arcueil.JPG" width="40%"; height="auto">
-        </div>
-
-	
-
-	  </div>
+  <header>
+    <h1>Venez danser la Salsa et la Bachata</h1>
+    <div class="container">
+      <div class="content"><img src="images/SALSA.jpg" width="100%"></div>
+      <div class="content">
+        <nav>
+          <div><a href="index.html"><button class="btn">Accueuil</button></a></div>
+          <div><a href="inscriptions.html"><button class="btn">Inscription</button></a></div>
+          <div><a href="videos.html"><button class="btn">Vidéos</button></a></div>
+          <div><a href="contact.html"><button class="btn">Contact</button></a></div>
+        </nav>
+      </div>
+      <div class="content"><img src="images/SA.jpg" width="100%"></div>
+    </div>
+  </header>
+  <main>
+    <h2>Vidéos</h2>
+    <div>
+      Entrez le code donné lors de votre inscription 
+      <br>
+      pour visualiser les vidéos des passes apprises pendant les cours
+      <br><br>
+    </div>
+    <div class="container">
+      <div class="content"><img src="images/arcu.jpg" width="100%"></div>
+      <div class="content">
+        <form action="JavaScript:gotoURL()" method="GET" name="GotoForm">
+          <p align="center">
+            <input type="password" size="20" maxlength="100" name="theURL" required><br><font color="#0000FF" size="1">Mot de passe</font>
+          </p>
+      </form>
+      </div>
+      <div class="content"><img src="images/arcueil.JPG" width="100%"></div>
+    </div>      
+    </div>
+  </main>
 </body>
 </html>
